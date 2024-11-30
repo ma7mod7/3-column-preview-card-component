@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    outline:none;
+    box-sizing: border-box;
+    position: relative;
+      
+}
+
+body{
+    height: 100svh;
+    max-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend Deca", sans-serif;
+    
+}
+main{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+   
+}
+.general{
+    width: 250px;
+    height: 400px;
+}
+img{
+    margin: 36px 0px 30px 30px;
+    width: 50px;
+}
+.text{
+    margin: 0px 30px ;
+}
+.text .head{
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", sans-serif;
+  
+}
+.text .subtext{
+    font-size: 12px;
+   font-weight:400;
+   color:  hsla(0, 0%, 100%, 0.75);
+   line-height: 20px;
+
+}
+.orange{
+    background-color: hsl(31, 77%, 52%);
+    background-repeat: no-repeat;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.ligtth-blue{
+    background-color:hsl(184, 100%, 22%);
+
+}
+.blue{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 8px 8px 0px;
+   
+}
+button{
+    margin-top: 80px;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 24px;
+    border: 2px solid white;
+    color:  hsla(0, 0%, 100%, 0.75);
+    width: 110px;
+    font-size: 12px; 
+
+}
+button:hover{
+    background-color: white;
+}
+.orange-btn:hover{
+    color: hsl(31, 77%, 52%) ;
+}
+.ligtth-blue-btn:hover{
+    color: hsl(184, 100%, 22%);
+}
+.blue-btn:hover{
+    color:hsl(179, 100%, 13%) ;
+}
+@media (max-width:426px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .orange{
+        border-radius: 8px 8px 0px 0px ;
+    }
+    .ligtth-blue{
+        border-radius: 0px;
+    }
+    .blue{
+        border-radius:0px 0px 8px 8px ;
+    }
+    .general{
+        height: 360px;
+        width: 260px;
+
+    }
+    button{
+        margin-top: 40px;
+
+    }
+}
